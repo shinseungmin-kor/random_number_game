@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+<body>
+    <h1>랜덤 숫자게임</h1>
+    <h4>Random Number Game</h4>
+    <h3>
+        <div>
+            <span id="end-num"></span></br>
+            <input type="range" list="tickmarks" id="set-range" name="volume" min="0" max="100" step="1" />
+            <datalist id="tickmarks">
+                <option value="0" label="0"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100" label="100"></option>
+            </datalist>
+        </div>
+        <br/>
+        <div>
+            숫자를 고르세요:
+            <input type="text" placeholder="여기에 입력하세요." id="input-num" />
+            <input type="button" id="input-btn" value="시작 !" /></br></br>
+            <span id="input-result"></span>
+        </div>
+        <h2 id="input-result-txt"></h2>
+    </h3>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>
